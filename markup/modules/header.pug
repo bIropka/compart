@@ -1,4 +1,36 @@
 header(role='banner')
-    .container
-        .row
-            div(class='col-12')
+
+    div(class='header-top')
+
+        div(class='wrapper-inner')
+
+            div(class='header-local')
+                a(class='header-local-item active') rus
+                a(class='header-local-item active') eng
+
+            a(href='index.html' class='header-logo')
+                img(src='images/logo.png' alt='compart')
+                div(class='header-logo-tagline') Поставщик запчастей на спецтехнику
+
+            nav(class='header-menu')
+                div(class='header-submenu')
+                    div(class='header-submenu-label') О нас
+                    div(class='header-submenu-dropdown')
+                        a(href='' class='header-submenu-item') Направления деятельности
+                        a(href='' class='header-submenu-item') Наши преимущества
+                        a(href='' class='header-submenu-item') Контакты
+                        a(href='' class='header-submenu-item') Вакансии
+                        a(href='' class='header-submenu-item') Логистика
+                a(class='header-nav-item') Новости
+                a(class='header-nav-item')
+                    != 'Каталоги online<span class="header-nav-marker">new</span>'
+
+            div(class='header-sign')
+                a(href='' class='header-sign-in') Войти
+                div(class='header-sign-text') или
+                a(href='' class='header-sign-up') зарегистрироваться
+
+    div(class='header-info')
+        div(class='container')
+            div(class='row')
+                div(class='col-12')

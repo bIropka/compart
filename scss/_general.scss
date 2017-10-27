@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  @include font-main;
+  font-family: $font-normal;
   line-height: 1;
   color: $color-text-dark;
 }
@@ -22,7 +22,6 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: $color-blue-medium;
   }
 
 }
@@ -58,30 +57,30 @@ textarea:focus {
 }
 
 input::-webkit-input-placeholder {
-  @include font-main;
-  font-size: $font-L;
-  color: $color-grey-light;
+  font-family: $font-normal;
+  font-size: $font-S;
+  color: $color-text-light;
   opacity: 1;
 }
 
 input::-moz-placeholder {
-  @include font-main;
-  font-size: $font-L;
-  color: $color-grey-light;
+  font-family: $font-normal;
+  font-size: $font-S;
+  color: $color-text-light;
   opacity: 1;
 }
 
 input:-moz-placeholder {
-  @include font-main;
-  font-size: $font-L;
-  color: $color-grey-light;
+  font-family: $font-normal;
+  font-size: $font-S;
+  color: $color-text-light;
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  @include font-main;
-  font-size: $font-L;
-  color: $color-grey-light;
+  font-family: $font-normal;
+  font-size: $font-S;
+  color: $color-text-light;
   opacity: 1;
 }
 
@@ -118,159 +117,33 @@ main {
 }
 
 h1 {
-  @include font-decor-bold;
-  font-size: $font-title-large;
-  color: #fff;
-  line-height: 83px;
-  position: relative!important;
-  z-index: 1!important;
-  text-shadow: 0 0 1px rgba(0, 0, 0, .75);
+
 }
 
 h2 {
-  @include font-decor;
-  font-size: $font-title-medium;
-  color: $color-crimson;
-  text-align: center;
-  margin: 0 0 65px;
+
 }
 
 section {
-  padding: 100px 0;
+  padding: 40px 0 0;
 }
 
 .button {
-  display: block;
-  padding: .5em 1.5em;
-  border-radius: 2em;
-  line-height: 1;
-  @include font-decor-bold;
-  color: #fff;
-  font-size: $font-L;
-
-  &.button-white {
-    background: #fff;
-    color: $color-crimson;
-    box-shadow: 0 0 0 2px $color-light;
-
-    &:hover {
-      background: $color-light;
-    }
-
-  }
-
-  &.button-crimson {
-    background: linear-gradient(to right, $color-crimson, $color-crimson-light);
-
-    &:hover {
-      background: linear-gradient(to left, $color-crimson, $color-crimson-light);
-    }
-
-  }
-
-  &.button-yellow {
-    background: $color-yellow;
-    box-shadow: 0 0 0 2px $color-yellow;
-
-
-    &:hover {
-      background: #fff;
-      color: $color-yellow;
-    }
-
-  }
 
 }
 
-.slider-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-label {
-  display: block;
-  width: 100%;
-  position: relative;
-  background: #fff;
-  border-radius: 22px;
-
-  input {
-    display: block;
-    width: 100%;
-    height: 44px;
-    border: none;
-    border-radius: 22px;
-    padding: 0 0 0 70px;
-    transition: .4s;
-    font-size: $font-L;
-  }
-
-  .fa {
-    font-size: $font-title-small;
-    color: $color-grey-light;
-    position: absolute;
-    margin: auto;
-    top: 6px;
-    bottom: 0;
-    left: 25px;
-    z-index: 3;
-  }
-
-  input:focus {
-    padding: 0 0 0 40px;
-
-    & + i {
-      opacity: 0;
-    }
-
-    & + .validatr-message + i {
-      opacity: 0;
-    }
-
-  }
+@media(max-width: 1199px) {
 
 }
 
-.validatr-message {
-  display: block;
-  position: absolute;
-  left: 0!important;
-  right: 0!important;
-  top: 0!important;
-  bottom: 0!important;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 0 1px $color-crimson;
-  border-radius: 22px!important;
-  z-index: 1;
-  font-size: 0;
-  color: transparent!important;
-  background: transparent!important;
-}
+@media(max-width: 991px) {
 
-fieldset {
-  display: block;
-  width: 100%;
-  border: none;
-  outline: none;
 }
 
 @media(max-width: 767px) {
 
-  section {
-    padding: 50px 0;
-  }
+}
 
-  h1 {
-    @include font-decor-bold;
-    font-size: $font-title-medium;
-    line-height: 52px;
-  }
-
-  h2 {
-    @include font-decor;
-    font-size: $font-title-small;
-    margin: 0 0 40px;
-  }
+@media(max-width: 575px) {
 
 }
