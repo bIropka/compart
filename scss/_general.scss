@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: $font-normal;
+  font-family: $font-regular;
   line-height: 1;
   color: $color-text-dark;
 }
@@ -19,16 +19,20 @@ button {
 
 a {
   text-decoration: none;
+  color: $color-red;
 
   &:hover {
     text-decoration: none;
+    color: $color-red;
   }
 
 }
 
-img {
+img,
+svg {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   margin: auto;
 }
@@ -56,31 +60,35 @@ textarea:focus {
   outline: none;
 }
 
+input {
+  border: none;
+}
+
 input::-webkit-input-placeholder {
-  font-family: $font-normal;
-  font-size: $font-S;
-  color: $color-text-light;
+  font-family: $font-regular;
+  font-size: 15px;
+  color: #90979a;
   opacity: 1;
 }
 
 input::-moz-placeholder {
-  font-family: $font-normal;
-  font-size: $font-S;
-  color: $color-text-light;
+  font-family: $font-regular;
+  font-size: 15px;
+  color: #90979a;
   opacity: 1;
 }
 
 input:-moz-placeholder {
-  font-family: $font-normal;
-  font-size: $font-S;
-  color: $color-text-light;
+  font-family: $font-regular;
+  font-size: 15px;
+  color: #90979a;
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  font-family: $font-normal;
-  font-size: $font-S;
-  color: $color-text-light;
+  font-family: $font-regular;
+  font-size: 15px;
+  color: #90979a;
   opacity: 1;
 }
 
@@ -121,7 +129,8 @@ h1 {
 }
 
 h2 {
-
+  color: $color-text-dark;
+  font-size: $font-size-title;
 }
 
 section {
@@ -129,6 +138,14 @@ section {
 }
 
 .button {
+
+}
+
+@media(min-width: 1200px) {
+
+  .container {
+    max-width: 1170px;
+  }
 
 }
 

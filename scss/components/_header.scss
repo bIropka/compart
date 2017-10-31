@@ -1,8 +1,386 @@
 /*********************************************
 *********** header
-**********************************************/
+*********************************************/
 
 header[role='banner'] {
+  flex-grow: 0;
+  padding: 90px 0 0;
+}
+
+.header-top {
+  background: url(../images/background-header.jpg) no-repeat center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+
+  .container {
+    position: relative;
+    padding: 20px 0;
+  }
+
+  [class^='col'] {
+    position: static;
+  }
+
+}
+
+.header-local {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 1;
+}
+
+.header-local-item {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: $font-bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header-top .header-local .header-local-item.active {
+  background: $color-text-dark;
+  color: #fff;
+}
+
+.header-logo {
+  width: 257px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  text-align: center;
+}
+
+.header-logo-tagline {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 0 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 60px 0 0;
+}
+
+.header-submenu {
+  margin: 0 20px 0 0;
+  padding: 5px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-submenu-label {
+  font-family: $font-bold;
+  font-size: 15px;
+  color: $color-text-dark;
+  padding: 0 20px 0 0;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 7px;
+    background: url(../images/icon-angle-down.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    transition: .4s;
+  }
+
+}
+
+.header-submenu-dropdown {
+  display: none;
+  width: 200px;
+  padding: 10px;
+  background: $color-red;
+  position: absolute;
+  left: -10px;
+  top: 100%;
+}
+
+.header-submenu-item {
+  display: block;
+  font-family: $font-bold;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: .4s;
+
+  &:hover {
+    border-top: 1px solid rgba(255, 255, 255, .75);
+    border-bottom: 1px solid rgba(255, 255, 255, .75);
+    color: #fff;
+  }
+
+}
+
+.header-submenu.active {
+
+  .header-submenu-label:after {
+    transform: rotate(-180deg);
+  }
+
+  .header-submenu-dropdown {
+    display: block;
+  }
+
+}
+
+.header-nav-item {
+  font-family: $font-bold;
+  font-size: 15px;
+  color: $color-text-dark;
+  padding: 5px 0;
+  margin: 0 20px 0 0;
+  position: relative;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+}
+
+.header-nav-marker {
+  font-family: $font-bold;
+  color: $color-red;
+  text-transform: uppercase;
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 100%;
+}
+
+.header-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sign-in,
+.header-sign-up {
+  font-family: $font-bold;
+  border-bottom: 2px dashed $color-red;
+  font-size: 15px;
+
+  &:hover {
+    border-bottom: 2px dashed transparent;
+  }
+
+}
+
+.header-sign-text {
+  font-family: $font-bold;
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+.header-catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  box-shadow: inset 0 0 0 2px #fff;
+
+  &:hover {
+    box-shadow: inset 0 0 0 4px #fff;
+  }
+
+}
+
+.header-catalog-burger {
+  width: 15px;
+  margin: 0 10px 0 0;
+}
+
+.header-catalog-text {
+  font-family: $font-bold;
+  font-size: 14px;
+}
+
+.header-info {
+
+  .container {
+    padding: 30px 0;
+  }
+
+}
+
+.header-callback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-callback-icon {
+  margin: 0 10px 0 0;
+}
+
+.header-callback-text {
+  font-size: 16px;
+  color: $color-red;
+  text-decoration: underline;
+  transition: .4s;
+}
+
+.header-callback:hover {
+
+  .header-callback-text {
+    text-decoration: none;
+  }
+
+}
+
+.form-search {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 30px;
+
+  label {
+    display: block;
+    width: calc(100% - 50px);
+    height: 100%;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+    border: 2px solid $color-grey;
+    border-right: none;
+    transition: .4s;
+
+    &:focus {
+      border: 2px solid $color-red;
+      border-right: none;
+    }
+
+  }
+
+  button[type='submit'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: $color-red;
+
+    img {
+      max-width: 80%;
+      transition: .4s;
+    }
+
+    &:hover {
+
+      img {
+        transform: scale(0.8);
+      }
+
+    }
+
+  }
+
+}
+
+.phone-block-link {
+  font-size: 19px;
+}
+
+.phone-block-note {
+  display: block;
+  font-size: 13px;
+  color: $color-text-light;
+  margin: 5px 0 0;
+}
+
+.header-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  padding: 0 50px 0 0;
+  position: relative;
+  background: $color-grey;
+  transition: .4s;
+  margin: 0 0 30px;
+}
+
+.header-cart-icon {
+  margin: 0 10px 0 0;
+  transition: .4s;
+  opacity: 1;
+}
+
+.header-cart-text {
+  font-family: $font-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.header-cart-value {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: $color-red;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-cart:hover {
+  background: $color-red;
+
+  .header-cart-icon {
+    margin: 0;
+    opacity: 0;
+  }
+
+  .header-cart-text {
+    color: #fff;
+  }
+
+}
+
+.header-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+}
+
+.header-email-icon {
+  margin: 0 10px 0 0;
+}
+
+.header-email-text {
+  color: $color-red;
+  text-decoration: underline;
+}
+
+.header-email:hover {
+
+  .header-email-text {
+    text-decoration: none;
+  }
 
 }
 

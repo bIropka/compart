@@ -1,3 +1,40 @@
 footer(role='contentinfo')
-    .container
-        div(class='row justify-content-between align-items-stretch')
+    div(class='container')
+        div(class='row')
+
+            div(class='col-xl-2')
+                a(class='footer-logo')
+                    img(src='images/logo.png' alt='counter')
+
+            div(class='col-xl-3')
+                div(class='footer-copyright')
+                    span © 2008 – 2017. ООО «КомПарт»
+                    span Все права защищены
+                div(class='footer-tagline') Поставщик запасных частей на спецтехнику
+
+            div(class='col-xl-6')
+                div(class='row')
+
+                    div(class='col-xl-4')
+
+                        div(class='phone-block')
+                            a(href='tel:' class='phone-block-link')
+                                != '8 (495) <span>150-05-66</span>'
+                            span(class='phone-block-note') Телефон в Москве
+
+                    div(class='col-xl-4')
+
+                        div(class='phone-block')
+                            a(href='tel:' class='phone-block-link')
+                                != '8 (800) <span>500-56-65</span>'
+                            span(class='phone-block-note') По России бесплатно
+
+                    div(class='col-xl-4')
+
+                        div(class='phone-block')
+                            a(href='tel:' class='phone-block-link')
+                                != '8 (423) <span>279-55-30</span>'
+                            span(class='phone-block-note') Телефон во Владивостоке
+
+            div(class='col-xl-1')
+                img(src='images/footer-counter.png' alt='counter')
