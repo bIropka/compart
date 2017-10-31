@@ -1,0 +1,69 @@
+/*********************************************
+*********** catalog
+**********************************************/
+
+.catalog-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 50%;
+  position: relative;
+  padding: 40px 60px 45px 150px;
+  border-bottom: 1px solid $color-grey;
+
+  h3 {
+    margin: 0;
+  }
+
+  &:nth-last-of-type(1),
+  &:nth-last-of-type(2) {
+    border-bottom: none;
+  }
+
+}
+
+.catalog-item-icon {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.catalog-item-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.catalog-item-info {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 15px 0 10px;
+}
+
+.catalog-item-links {
+
+  a {
+    display: inline-block;
+    font-size: 12px;
+
+    &:after {
+      content:',';
+      display: inline-block;
+      margin: 0 5px 0 0;
+    }
+
+    &:last-of-type {
+
+      &:after {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

@@ -18,7 +18,7 @@ header[role='banner'] {
 
   .container {
     position: relative;
-    padding: 20px 0;
+    padding: 20px 15px;
   }
 
   [class^='col'] {
@@ -43,7 +43,7 @@ header[role='banner'] {
 }
 
 .header-top .header-local .header-local-item.active {
-  background: $color-text-dark;
+  background: $color-dark;
   color: #fff;
 }
 
@@ -53,6 +53,7 @@ header[role='banner'] {
   left: 15px;
   top: 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 .header-logo-tagline {
@@ -78,7 +79,7 @@ header[role='banner'] {
 .header-submenu-label {
   font-family: $font-bold;
   font-size: 15px;
-  color: $color-text-dark;
+  color: $color-dark;
   padding: 0 20px 0 0;
   position: relative;
 
@@ -110,6 +111,7 @@ header[role='banner'] {
 .header-submenu-item {
   display: block;
   font-family: $font-bold;
+  text-decoration: none;
   color: #fff;
   font-size: 13px;
   padding: 5px 0;
@@ -140,7 +142,8 @@ header[role='banner'] {
 .header-nav-item {
   font-family: $font-bold;
   font-size: 15px;
-  color: $color-text-dark;
+  color: $color-dark;
+  text-decoration: none;
   padding: 5px 0;
   margin: 0 20px 0 0;
   position: relative;
@@ -172,6 +175,7 @@ header[role='banner'] {
   font-family: $font-bold;
   border-bottom: 2px dashed $color-red;
   font-size: 15px;
+  text-decoration: none;
 
   &:hover {
     border-bottom: 2px dashed transparent;
@@ -192,6 +196,7 @@ header[role='banner'] {
   width: 220px;
   height: 50px;
   box-shadow: inset 0 0 0 2px #fff;
+  text-decoration: none;
 
   &:hover {
     box-shadow: inset 0 0 0 4px #fff;
@@ -212,7 +217,7 @@ header[role='banner'] {
 .header-info {
 
   .container {
-    padding: 30px 0;
+    padding: 30px 15px;
   }
 
 }
@@ -297,12 +302,13 @@ header[role='banner'] {
 
 .phone-block-link {
   font-size: 19px;
+  text-decoration: none;
 }
 
 .phone-block-note {
   display: block;
   font-size: 13px;
-  color: $color-text-light;
+  color: $color-light;
   margin: 5px 0 0;
 }
 
@@ -373,15 +379,6 @@ header[role='banner'] {
 
 .header-email-text {
   color: $color-red;
-  text-decoration: underline;
-}
-
-.header-email:hover {
-
-  .header-email-text {
-    text-decoration: none;
-  }
-
 }
 
 @media(max-width: 1199px) {

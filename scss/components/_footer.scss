@@ -3,7 +3,51 @@
 **********************************************/
 
 footer[role='contentinfo'] {
+  background: $color-grey;
 
+  .container {
+    padding: 35px 15px;
+  }
+
+}
+
+.footer-logo {
+  display: block;
+  width: 100%;
+  max-width: 130px;
+
+  img {
+    filter: grayscale(100%);
+    opacity: .5;
+    transition: .4s;
+  }
+
+  &:hover {
+
+    img {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+
+  }
+
+}
+
+.footer-copyright {
+
+  span {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}
+
+.footer-tagline {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-bold;
+  margin: 10px 0 0;
 }
 
 @media(max-width: 1199px) {

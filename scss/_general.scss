@@ -8,7 +8,7 @@
   padding: 0;
   font-family: $font-regular;
   line-height: 1;
-  color: $color-text-dark;
+  color: $color-dark;
 }
 
 a,
@@ -18,7 +18,7 @@ button {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $color-red;
 
   &:hover {
@@ -42,9 +42,9 @@ button {
   border: none;
 }
 
-.slider-wrapper .slide:hover,
-.slider-wrapper .slide:active,
-.slider-wrapper .slide:focus,
+.slide:hover,
+.slide:active,
+.slide:focus,
 a:hover,
 a:active,
 a:focus,
@@ -129,8 +129,12 @@ h1 {
 }
 
 h2 {
-  color: $color-text-dark;
+  text-align: center;
+  color: $color-dark;
   font-size: $font-size-title;
+  text-transform: uppercase;
+  font-family: $font-regular;
+  font-weight: 400;
 }
 
 section {
@@ -144,7 +148,7 @@ section {
 @media(min-width: 1200px) {
 
   .container {
-    max-width: 1170px;
+    max-width: 1200px;
   }
 
 }

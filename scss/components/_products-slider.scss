@@ -1,0 +1,168 @@
+/*********************************************
+*********** products-slider
+**********************************************/
+
+.products-slider {
+  background: $color-grey;
+  margin: 30px 0 0;
+  padding: 0 25px;
+}
+
+.product-card {
+  padding: 22px;
+  margin: 50px 35px;
+  background: #fff;
+  text-align: center;
+
+  h3 {
+    margin: 20px 0 10px;
+    line-height: 1;
+    font-size: 0;
+  }
+
+}
+
+.products-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 57px;
+  background: $color-red;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 15px 5px rgba(56, 56, 56, .2);
+  }
+
+  &:active {
+    box-shadow: 0 0 15px 5px rgba(56, 56, 56, .4);
+  }
+
+}
+
+.products-control-prev {
+  left: -43px;
+}
+
+.products-control-next {
+  right: -43px;
+}
+
+.product-card-image {
+  display: block;
+  width: 100%;
+  padding-top: 80%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+.product-card-title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.product-card-code {
+  font-size: 14px;
+}
+
+@media(max-width: 1300px) {
+
+  .products-slider {
+    padding: 0 80px;
+  }
+
+  .products-control-prev {
+    left: 15px;
+  }
+
+  .products-control-next {
+    right: 15px;
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+  .products-slider {
+    padding: 50px 0 0;
+  }
+
+  .products-control-prev {
+    top: 75px;
+    bottom: auto;
+    left: calc(50% - 83px);
+  }
+
+  .products-control-next {
+    top: 75px;
+    bottom: auto;
+    right: calc(50% - 83px);
+  }
+
+}
+
+@media(max-width: 640px) {
+
+  .product-card {
+    padding: 15px;
+    margin: 50px 15px;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .products-slider {
+    padding: 0 80px;
+  }
+
+  .products-control-prev {
+    top: 0;
+    bottom: 0;
+    left: 15px;
+  }
+
+  .products-control-next {
+    top: 0;
+    bottom: 0;
+    right: 15px;
+  }
+
+  .product-card {
+    padding: 15px;
+    margin: 50px 0;
+  }
+
+}
+
+@media(max-width: 360px) {
+
+  .products-control {
+    width: 40px;
+    height: 40px;
+  }
+
+  .products-slider {
+    padding: 0 50px;
+  }
+
+}
