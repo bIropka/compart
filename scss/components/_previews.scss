@@ -3,7 +3,7 @@
 **********************************************/
 
 .previews {
-  padding: 40px 0;
+  padding: 0;
 
   h2 {
     text-align: left;
@@ -15,6 +15,10 @@
     font-size: 0;
   }
 
+}
+
+.preview-list {
+  padding: 40px 0;
 }
 
 .preview-item {
@@ -153,4 +157,14 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $color-dark;
+}
+
+
+
+@media(max-width: 991px) {
+
+  .preview-item {
+    padding: 0 0 0 110px;
+  }
+
 }

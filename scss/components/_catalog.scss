@@ -67,3 +67,48 @@
   }
 
 }
+
+
+
+@media(max-width: 991px) {
+
+  .catalog-item {
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 575px) {
+
+  .catalog-item {
+    padding: 30px 30px 30px 100px;
+  }
+
+  .catalog-item-icon {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+
+}
+@media(max-width: 400px) {
+
+  .catalog-item {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .catalog-item-icon {
+    position: static;
+    margin: 0 auto 15px;
+  }
+
+  .catalog-item-links {
+
+    a {
+      margin: 5px;
+    }
+
+  }
+
+}

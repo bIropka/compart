@@ -1,10 +1,13 @@
 header(role='banner')
 
     div(class='header-top')
+
+        div(class='mobile-nav')
+
         div(class='container')
             div(class='row')
 
-                div(class='col-xl-3')
+                div(class='col-4 col-sm-5 col-lg-3')
 
                     div(class='header-local')
                         a(class='header-local-item active') rus
@@ -15,7 +18,7 @@ header(role='banner')
                         div(class='header-logo-tagline')
                             != 'Поставщик запчастей<br> на спецтехнику'
 
-                div(class='col-xl-6 d-flex justify-content-center')
+                div(class='col-2 col-lg-6 d-flex justify-content-center align-items-center')
 
                     nav(class='header-menu')
                         div(class='header-submenu')
@@ -30,12 +33,17 @@ header(role='banner')
                         a(href='#' class='header-nav-item')
                             != 'Каталоги online<span class="header-nav-marker">new</span>'
 
+                    div(class='burger')
+                        div(class='burger-top')
+                        div(class='burger-middle')
+                        div(class='burger-bottom')
+
                     div(class='header-sign')
                         a(href='' class='header-sign-in') Войти
                         div(class='header-sign-text') или
                         a(href='' class='header-sign-up') зарегистрироваться
 
-                div(class='col-xl-3 d-flex justify-content-end')
+                div(class='col-6 col-sm-5 col-lg-3 d-flex justify-content-end')
                     a(href='page-catalog.html' class='header-catalog')
                         span(class='header-catalog-burger')
                             img(src='images/icon-burger.png')
@@ -45,14 +53,14 @@ header(role='banner')
         div(class='container')
             div(class='row')
 
-                div(class='col-xl-3 align-self-end')
+                div(class='col-12 col-xl-3 align-self-end')
 
                     a(class='header-callback')
                         span(class='header-callback-icon')
                             img(src='images/icon-phone.png' alt='callback')
                         span(class='header-callback-text') Заказать обратный звонок
 
-                div(class='col-xl-6')
+                div(class='col-12 col-xl-6')
                     div(class='row')
 
                         div(class='col-12')
@@ -63,28 +71,28 @@ header(role='banner')
                                 button(type='submit')
                                     img(src='images/icon-search.png' alt='Submit')
 
-                        div(class='col-xl-4')
+                        div(class='col-md-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')
                                     != '8 (495) <span>150-05-66</span>'
                                 span(class='phone-block-note') Телефон в Москве
 
-                        div(class='col-xl-4')
+                        div(class='col-md-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')
                                     != '8 (800) <span>500-56-65</span>'
                                 span(class='phone-block-note') По России бесплатно
 
-                        div(class='col-xl-4')
+                        div(class='col-md-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')
                                     != '8 (423) <span>279-55-30</span>'
                                 span(class='phone-block-note') Телефон во Владивостоке
 
-                div(class='col-xl-3 d-flex flex-wrap justify-content-end align-items-start align-content-start')
+                div(class='col-12 text-center flex-direction-column col-xl-3 d-xl-flex flex-wrap justify-content-end align-items-start align-content-start')
 
                     a(class='header-cart')
                         span(class='header-cart-icon')

@@ -94,6 +94,7 @@
   justify-content: flex-start;
   align-items: stretch;
   background: rgba(0, 0, 0, .57);
+  max-width: 100% ;
 }
 
 .banner-main-tagline {
@@ -102,7 +103,8 @@
   font-size: 27px;
   text-transform: uppercase;
   color: #fff;
-  padding: 30px 30px 30px 80px;
+  padding: 25px 30px 25px 80px;
+  line-height: 1.2;
 }
 
 .banner-main-link {
@@ -121,6 +123,44 @@
 
   &:hover {
     background: #fff;
+  }
+
+}
+
+
+
+@media(max-width: 1199px) {
+
+}
+
+@media(max-width: 991px) {
+
+}
+
+@media(max-width: 767px) {
+
+  .banner-main-tagline {
+    font-size: 20px;
+    padding: 25px;
+  }
+
+  .banner-main-link {
+    padding: 0 25px;
+    font-size: 17px;
+  }
+
+}
+
+@media(max-width: 575px) {
+
+  .banner-main-tagline {
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+
+  .banner-main-link {
+    font-size: 15px;
+    padding: 0 15px;
   }
 
 }
