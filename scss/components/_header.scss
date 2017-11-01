@@ -2,7 +2,7 @@
 *********** header
 *********************************************/
 
-header[role='banner'] {
+header {
   flex-grow: 0;
   padding: 90px 0 0;
 }
@@ -581,8 +581,9 @@ header[role='banner'] {
     margin: 15px auto;
   }
 
-  .header-email {
-    display: inline-flex;
+  .header-email,
+  .header-callback {
+    margin: 10px;
   }
 
   .header-info .phone-block {
@@ -609,10 +610,10 @@ header[role='banner'] {
   .header-submenu-label {
     font-family: $font-bold;
     display: block;
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 5px 0;
     margin: 5px 0;
-    background: rgba(255, 255, 255, .75);
+    color: #fff;
 
     &:after {
       display: none;
@@ -624,19 +625,18 @@ header[role='banner'] {
     display: block;
     width: calc(100% - 100px);
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     background: none;
     position: static;
   }
 
   .header-submenu-item {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 0;
     margin: 3px 0;
-    background: rgba(255, 255, 255, .75);
+    color: #fff;
     font-family: $font-bold;
     text-decoration: none;
-    color: $color-dark;
     border: none;
 
     &:hover {
@@ -648,10 +648,10 @@ header[role='banner'] {
 
   .header-nav-item {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 0;
     margin: 5px 0;
-    background: rgba(255, 255, 255, .75);
+    color: #fff;
   }
 
   .header-nav-marker {
@@ -662,6 +662,10 @@ header[role='banner'] {
     position: absolute;
     top: 2px;
     left: 100%;
+  }
+
+  .header-info .phone-block-link {
+    font-size: 16px;
   }
 
 }
@@ -678,6 +682,13 @@ header[role='banner'] {
       left: 15px;
     }
 
+  }
+
+}
+@media(max-width: 575px) {
+
+  .header-info .phone-block-link {
+    font-size: 19px;
   }
 
 }

@@ -2,7 +2,7 @@
 *********** footer
 **********************************************/
 
-footer[role='contentinfo'] {
+footer {
   background: $color-grey;
 
   .container {
@@ -52,7 +52,7 @@ footer[role='contentinfo'] {
 
 @media(max-width: 1199px) {
 
-  footer[role='contentinfo'] {
+  footer {
 
     .phone-block {
       margin: 30px 0;
@@ -68,7 +68,7 @@ footer[role='contentinfo'] {
 
 @media(max-width: 767px) {
 
-  footer[role='contentinfo'] {
+  footer {
 
     .phone-block-link {
       font-size: 16px;
@@ -84,7 +84,7 @@ footer[role='contentinfo'] {
     margin: 0 0 30px;
   }
 
-  footer[role='contentinfo'] {
+  footer {
 
     .phone-block {
       margin: 30px 0 0;

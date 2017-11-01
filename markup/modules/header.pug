@@ -1,4 +1,4 @@
-header(role='banner')
+header
 
     div(class='header-top')
 
@@ -46,14 +46,14 @@ header(role='banner')
                 div(class='col-6 col-sm-5 col-lg-3 d-flex justify-content-end')
                     a(href='page-catalog.html' class='header-catalog')
                         span(class='header-catalog-burger')
-                            img(src='images/icon-burger.png')
+                            img(src='images/icon-burger.png' alt='some text')
                         span(class='header-catalog-text') КАТАЛОГ ЗАПЧАСТЕЙ
 
     div(class='header-info')
         div(class='container')
             div(class='row')
 
-                div(class='col-12 col-xl-3 align-self-end')
+                div(class='col-12 col-xl-3 d-flex justify-content-center flex-wrap align-self-end')
 
                     a(class='header-callback')
                         span(class='header-callback-icon')
@@ -65,27 +65,27 @@ header(role='banner')
 
                         div(class='col-12')
 
-                            form(action='' class='form-search')
+                            form(action='#' class='form-search')
                                 label
                                     input(type='search' placeholder='Название или каталожный номер запчасти')
                                 button(type='submit')
                                     img(src='images/icon-search.png' alt='Submit')
 
-                        div(class='col-md-4 d-flex justify-content-center')
+                        div(class='col-sm-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')
                                     != '8 (495) <span>150-05-66</span>'
                                 span(class='phone-block-note') Телефон в Москве
 
-                        div(class='col-md-4 d-flex justify-content-center')
+                        div(class='col-sm-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')
                                     != '8 (800) <span>500-56-65</span>'
                                 span(class='phone-block-note') По России бесплатно
 
-                        div(class='col-md-4 d-flex justify-content-center')
+                        div(class='col-sm-4 d-flex justify-content-center')
 
                             div(class='phone-block')
                                 a(href='tel:' class='phone-block-link')

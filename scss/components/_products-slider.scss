@@ -102,20 +102,13 @@
 
 @media(max-width: 1199px) {
 
+  .products-control {
+    width: 40px;
+    height: 40px;
+  }
+
   .products-slider {
-    padding: 50px 0 0;
-  }
-
-  .products-control-prev {
-    top: 75px;
-    bottom: auto;
-    left: calc(50% - 83px);
-  }
-
-  .products-control-next {
-    top: 75px;
-    bottom: auto;
-    right: calc(50% - 83px);
+    padding: 0 50px;
   }
 
 }
@@ -150,19 +143,6 @@
   .product-card {
     padding: 15px;
     margin: 50px 0;
-  }
-
-}
-
-@media(max-width: 360px) {
-
-  .products-control {
-    width: 40px;
-    height: 40px;
-  }
-
-  .products-slider {
-    padding: 0 50px;
   }
 
 }
