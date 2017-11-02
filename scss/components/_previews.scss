@@ -25,6 +25,13 @@
   padding: 0 0 0 120px;
   position: relative;
   margin: 0 0 30px;
+  border: 2px solid transparent;
+  transition: .6s;
+
+  &:hover {
+    border: 2px solid $color-red;
+  }
+
 }
 
 .preview-item-image {
@@ -142,14 +149,15 @@
 }
 
 .link-see-all {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
 }
 
 .link-see-all-icon {
-  margin: 0 10px 0 0;
+  width: 15px;
+  transition: .4s;
 }
 
 .link-see-all-text {
@@ -157,8 +165,22 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $color-dark;
+  margin: 0 0 0 10px;
+  transition: .4s;
 }
 
+.link-see-all:hover {
+
+  .link-see-all-icon {
+    opacity: 0;
+  }
+
+  .link-see-all-text {
+    margin: 0;
+    color: $color-red;
+  }
+
+}
 
 
 @media(max-width: 991px) {
