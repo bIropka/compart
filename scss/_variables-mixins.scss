@@ -7,9 +7,18 @@ $color-grey: #e3e3e3;
 $color-dark: #383838;
 $color-light: #a8afb3;
 
-$font-regular: 'NeoSansPro';
-$font-bold: 'NeoSansProMedium';
-
 $font-size-title: 27px;
+
+///////////////////////////////////////////////
+///////////// mixins
+///////////////////////////////////////////////
+
+@mixin regular {
+  font-weight: 400;
+}
+
+@mixin medium {
+  font-weight: 500;
+}
 
 

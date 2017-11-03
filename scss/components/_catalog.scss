@@ -74,6 +74,11 @@
 
   .catalog-item {
     width: 100%;
+
+    &:nth-last-of-type(2) {
+      border-bottom: 1px solid $color-grey;
+    }
+
   }
 
 }

@@ -121,7 +121,7 @@
 }
 
 .link-see-all-text {
-  font-family: $font-bold;
+  @include medium;
   font-size: 12px;
   text-transform: uppercase;
   color: $color-dark;

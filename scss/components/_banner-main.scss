@@ -135,14 +135,14 @@
 
 @media(max-width: 991px) {
 
-}
-
-@media(max-width: 767px) {
-
   .banner-main-tagline {
     font-size: 20px;
     padding: 25px;
   }
+
+}
+
+@media(max-width: 767px) {
 
   .banner-main-link {
     padding: 0 25px;
@@ -154,13 +154,27 @@
 @media(max-width: 575px) {
 
   .banner-main-tagline {
-    font-size: 18px;
+    font-size: 14px;
     padding: 20px 15px;
   }
 
   .banner-main-link {
-    font-size: 15px;
+    font-size: 12px;
     padding: 0 15px;
+  }
+
+}
+
+@media(max-width: 400px) {
+
+  .banner-main-tagline {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+
+  .banner-main-link {
+    font-size: 10px;
+    padding: 0 10px;
   }
 
 }

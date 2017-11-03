@@ -2,12 +2,4 @@
 *********** fonts
 **********************************************/
 
-@font-face {
-  font-family: 'NeoSansPro';
-  src: url('../fonts/NeoSansPro-Regular.eot') format('embedded-opentype'),  url('../fonts/NeoSansPro-Regular.woff') format('woff'), url('../fonts/NeoSansPro-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'NeoSansProMedium';
-  src: url('../fonts/NeoSansPro-Medium.eot') format('embedded-opentype'),  url('../fonts/NeoSansPro-Medium.woff') format('woff'), url('../fonts/NeoSansPro-Medium.ttf')  format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500&subset=cyrillic');

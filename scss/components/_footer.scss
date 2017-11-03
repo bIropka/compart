@@ -46,7 +46,7 @@ footer {
 .footer-tagline {
   font-size: 14px;
   line-height: 17px;
-  font-family: $font-bold;
+  @include medium;
   margin: 10px 0 0;
 }
 
@@ -74,6 +74,10 @@ footer {
       font-size: 16px;
     }
 
+    .phone-block-note {
+      font-size: 12px;
+    }
+
   }
 
 }
@@ -81,17 +85,17 @@ footer {
 @media(max-width: 575px) {
 
   .footer-logo {
-    margin: 0 0 30px;
+    margin: 15px 0 30px;
   }
 
   footer {
 
     .phone-block {
-      margin: 30px 0 0;
+      margin: 15px 0;
     }
 
     .metrika {
-      margin: 30px 0 0;
+      margin: 15px 0 30px;
     }
 
     .phone-block-link {
