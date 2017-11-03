@@ -21,4 +21,8 @@ $font-size-title: 27px;
   font-weight: 500;
 }
 
+@mixin bold {
+  font-weight: 700;
+}
+
 
