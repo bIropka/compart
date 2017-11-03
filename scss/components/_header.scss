@@ -15,6 +15,7 @@ header {
   left: 0;
   top: 0;
   z-index: 1001;
+  transform: translateZ(0);
 
   .container {
     position: relative;
@@ -743,7 +744,8 @@ header {
     font-size: 12px;
   }
 
-  .header-logo {
+  .header-top .header-logo,
+  .header-top.shortest .header-logo {
     width: 100px;
     top: 12px;
   }
@@ -756,7 +758,8 @@ header {
 
 @media(max-width: 380px) {
 
-  .header-logo {
+  .header-top .header-logo,
+  .header-top.shortest .header-logo {
     width: 80px;
     top: 19px;
   }
