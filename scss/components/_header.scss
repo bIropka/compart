@@ -460,6 +460,17 @@ header {
     flex-shrink: 1;
     flex-grow: 1;
     margin: 0;
+
+    input {
+      border: 2px solid #fff;
+
+      &:focus {
+        border: 2px solid $color-red;
+        border-right: none;
+      }
+
+    }
+
   }
 
   .header-cart {
@@ -737,12 +748,10 @@ header {
 
 @media(max-width: 575px) {
 
-  .header-info .phone-block {
-    display: none;
-  }
-
-  .header-email {
+  .header-email,
+  .header-callback {
     width: auto;
+    margin: 10px 0 0;
   }
 
   .header-email-text,
@@ -769,11 +778,6 @@ header {
       top: 70px;
     }
 
-  }
-
-  .header-email,
-  .header-callback {
-    margin: 0;
   }
 
   .header-email-text,
