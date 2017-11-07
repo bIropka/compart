@@ -353,9 +353,11 @@ header {
 }
 
 .header-cart-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-cart.png) no-repeat;
   margin: 0 10px 0 0;
-  transition: .4s;
-  opacity: 1;
 }
 
 .header-cart-text {
@@ -380,11 +382,10 @@ header {
 }
 
 .header-cart:hover {
-  background: $color-red;
+  background: $color-dark;
 
   .header-cart-icon {
-    margin: 0;
-    opacity: 0;
+    background: url(../images/icon-cart-white.png) no-repeat;
   }
 
   .header-cart-text {
