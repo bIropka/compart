@@ -55,14 +55,10 @@ footer {
   footer {
 
     .phone-block {
-      margin: 30px 0;
+      margin: 0 0 30px;
     }
 
   }
-
-}
-
-@media(max-width: 991px) {
 
 }
 
@@ -90,8 +86,12 @@ footer {
 
   footer {
 
+    .container {
+      padding: 20px 15px;
+    }
+
     .phone-block {
-      margin: 15px 0;
+      margin: 0 0 15px;
     }
 
     .metrika {
@@ -99,7 +99,44 @@ footer {
     }
 
     .phone-block-link {
-      font-size: 19px;
+      font-size: 14px;
+    }
+
+    .phone-block-note {
+      font-size: 10px;
+    }
+
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  footer {
+
+    .phone-block-link {
+      font-size: 14px;
+    }
+
+    .phone-block-note {
+      font-size: 10px;
+      white-space: nowrap;
+    }
+
+  }
+
+}
+
+@media(max-width: 380px) {
+
+  footer {
+
+    .phone-block-link {
+      font-size: 11px;
+    }
+
+    .phone-block-note {
+      font-size: 8px;
     }
 
   }
