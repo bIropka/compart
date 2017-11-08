@@ -15,5 +15,76 @@ html(lang="ru")
             main
                 block content
             include ../modules/footer
+        div(class='window window-sign-in')
+            form(class='window-inner')
+                div(class='close-window')
+                    img(src='images/icon-close.png' alt='close')
+                div(class='window-title') Авторизация
+                label
+                    input(type='text' placeholder='Логин*')
+                label
+                    input(type='text' placeholder='Пароль*')
+                button(type='submit')
+                    div(class='window-button-icon')
+                    div(class='window-button-text') Войти на сайт
+                div(class='row')
+                    div(class='col-6')
+                        a(href='#' class='link-forget-password') Забыли пароль?
+                    div(class='col-6 text-right')
+                        a(href='#' class='link-sign-up') Зарегистрироваться
+                div(class='sign-social')
+                    div(class='sign-social-title') Вход через социальные сети
+                    div(class='sign-social-list')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-facebook.png' alt='facebook')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-google.png' alt='google')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-twitter.png' alt='twitter')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-instagram.png' alt='instagram')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-vkontakte.png' alt='vkontakte')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-mail-ru.png' alt='mail-ru')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-odnoklassniki.png' alt='odnoklassniki')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-yandex.png' alt='yandex')
+        div(class='window window-sign-up')
+            form(class='window-inner')
+                div(class='close-window')
+                    img(src='images/icon-close.png' alt='close')
+                div(class='window-title') Регистрация
+                label
+                    input(type='text' placeholder='ФИО*')
+                label
+                    input(type='text' placeholder='Телефон*')
+                label
+                    input(type='text' placeholder='E-mail*')
+                label
+                    input(type='text' placeholder='Компания')
+                button(type='submit')
+                    div(class='window-button-icon')
+                    div(class='window-button-text') Зарегистрироваться
+                div(class='sign-social')
+                    div(class='sign-social-title') Регистрация через социальные сети
+                    div(class='sign-social-list')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-facebook.png' alt='facebook')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-google.png' alt='google')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-twitter.png' alt='twitter')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-instagram.png' alt='instagram')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-vkontakte.png' alt='vkontakte')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-mail-ru.png' alt='mail-ru')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-odnoklassniki.png' alt='odnoklassniki')
+                        a(href='' class='sign-social-item')
+                            img(src='images/icon-social-yandex.png' alt='yandex')
         script(src="js/scripts.min.js")
 

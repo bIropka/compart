@@ -1,0 +1,192 @@
+/*********************************************
+*********** window
+**********************************************/
+
+.window {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, .75);
+  z-index: 1002;
+
+  .window-inner {
+    display: block;
+    width: 480px;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+  }
+
+  .close-window {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 2px solid $color-grey;
+    padding: 0 20px;
+  }
+
+  button[type='submit'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $color-red;
+    border: 2px solid $color-red;
+    margin: 30px 0 15px;
+
+    .window-button-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../images/icon-lock-white.png) no-repeat center;
+    }
+
+    .window-button-text {
+      color: #fff;
+      margin: 0 0 0 15px;
+      font-size: 14px;
+      text-transform: uppercase;
+      @include bold;
+    }
+
+  }
+
+  .window-title {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+}
+
+.window-sign-in {
+
+  button[type='submit']:hover {
+    background: #fff;
+
+    .window-button-icon {
+       background: url(../images/icon-lock-red.png) no-repeat center;
+     }
+
+    .window-button-text {
+      color: $color-red;
+    }
+
+  }
+
+}
+
+.window-sign-up {
+
+  button[type='submit'] {
+
+    .window-button-icon {
+      background: url(../images/icon-pencil-white.png) no-repeat center;
+    }
+
+  }
+
+  button[type='submit']:hover {
+    background: #fff;
+
+    .window-button-icon {
+      background: url(../images/icon-pencil-red.png) no-repeat center;
+    }
+
+    .window-button-text {
+      color: $color-red;
+    }
+
+  }
+
+}
+
+.link-forget-password,
+.link-sign-up {
+  font-size: 17px;
+}
+
+.link-forget-password {
+  color: $color-dark;
+
+  &:hover {
+    color: $color-dark;
+  }
+
+}
+
+.sign-social {
+  margin: 30px 0 0;
+}
+
+.sign-social-title {
+  text-align: center;
+  font-size: 15px;
+  @include medium;
+  color: #000;
+}
+
+.sign-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0;
+}
+
+.sign-social-item {
+  margin: 0 3px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .window-inner {
+    width: 100%;
+  }
+
+  .link-forget-password,
+  .link-sign-up {
+    font-size: 14px;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .link-forget-password,
+  .link-sign-up {
+    font-size: 12px;
+  }
+
+}

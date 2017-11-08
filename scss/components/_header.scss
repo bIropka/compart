@@ -411,7 +411,7 @@ header {
 
 .header-top.shortest {
   position: fixed;
-  top: -1000px;
+  top: -500px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .25);
 
   .row {
@@ -479,6 +479,15 @@ header {
     flex-shrink: 0;
     flex-grow: 0;
     margin: 0 35px;
+    border: 2px solid #fff;
+  }
+
+  .header-cart-value {
+    line-height: 46px;
+    height: 100%;
+    top: 0;
+    right: 0;
+
   }
 
   .header-catalog {
