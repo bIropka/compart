@@ -427,22 +427,21 @@ header {
   .header-local {
     position: static;
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 15px;
   }
 
   .header-local .header-local-item {
-    font-size: 14px;
-    background: transparent;
     color: #fff;
+    font-size: 14px;
+    line-height: 1;
   }
 
   .header-local .header-local-item.active {
-    background: transparent;
-    color: $color-red;
+    background: $color-red;
   }
 
   .burger {
-    display: block;
+    display: none;
     order: 1;
     flex-shrink: 0;
     flex-grow: 0;
@@ -509,9 +508,9 @@ header {
   .header-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-    margin: 30px 0 0;
+    margin: 0;
     order: inherit;
   }
 
@@ -521,6 +520,7 @@ header {
     cursor: pointer;
     position: relative;
     min-width: 320px;
+    text-align: left;
   }
 
   .header-submenu-label {
@@ -539,9 +539,9 @@ header {
 
   .header-submenu-dropdown {
     display: block;
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
     padding: 0;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     background: none;
     position: static;
   }
@@ -566,7 +566,7 @@ header {
     display: inline-block;
     font-size: 20px;
     padding: 10px 0;
-    margin: 5px 0;
+    margin: 0;
     color: #fff;
   }
 
@@ -595,7 +595,7 @@ header {
     left: 0;
     top: 2000px;
     background: rgba(0, 0, 0, .75);
-    padding: 50px 25px;
+    padding: 50px 25px 50px 50px;
     transition: .8s;
 
     &.active {
@@ -643,6 +643,7 @@ header {
 
     .header-local {
       display: block;
+      text-align: left;
     }
 
   }
@@ -721,13 +722,15 @@ header {
       padding: 0 65px 0 15px;
     }
 
+    .burger {
+      display: block;
+    }
+
   }
 
   .header-cart {
     width: auto;
   }
-
-
 
 }
 
