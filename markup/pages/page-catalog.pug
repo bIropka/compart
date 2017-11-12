@@ -1,0 +1,24 @@
+extends ../layout/layout
+
+block title
+    | Page catalog
+
+block content
+    div(class='container')
+        div(class='row')
+
+            div(class='col-12')
+                include ../modules/breadcrumbs
+
+        div(class='row')
+
+            div(class='col-12 col-md-3 d-flex align-items-stretch')
+                aside
+                    include ../modules/banner-aside
+                    include ../modules/catalog-aside
+
+            div(class='col-12 col-md-9')
+                include ../modules/products-header
+                include ../modules/products-search
+                include ../modules/products-filter
+                include ../modules/products-list

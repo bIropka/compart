@@ -120,6 +120,16 @@ $(window).ready(function() {
         $('html, body').animate({scrollTop: 0}, 600);
     });
 
+    $('.products-show-amount-current').click(function() {
+        $(this).parent().toggleClass('active');
+    });
+
+    $('.products-show-amount ul li').click(function() {
+        $(this).parents('.products-show-amount').find('.products-show-amount-current').text($(this).text());
+        $(this).parents('.products-show-amount').find('input').attr('value', $(this).text());
+        $(this).parents('.products-show-amount').removeClass('active');
+    });
+
     /* modal */
 
     $('.header-sign-in').click(function() {
