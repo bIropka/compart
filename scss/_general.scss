@@ -127,10 +127,12 @@ main {
   display: block;
   width: 100%;
   flex-grow: 1;
+  padding: 0 0 45px;
 }
 
 h1 {
-
+  font-size: $font-size-title;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -138,7 +140,6 @@ h2 {
   color: $color-dark;
   font-size: $font-size-title;
   text-transform: uppercase;
-  font-family: 'Exo 2', sans-serif;
   @include regular;
   font-weight: 400;
 }
@@ -237,6 +238,13 @@ section {
   }
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
 
 @media(min-width: 1200px) {
 

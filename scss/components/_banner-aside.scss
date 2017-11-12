@@ -1,0 +1,70 @@
+/*********************************************
+*********** banner-aside
+**********************************************/
+
+.banner-aside {
+  display: block;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 0 1px $color-grey;
+  margin: 0 0 30px;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 1px $color-grey;
+  }
+
+}
+
+.banner-aside-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  @include medium;
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .57);
+  transition: .4s;
+}
+
+@media(max-width: 1199px) {
+
+  .banner-aside-title {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+}
+
+@media(max-width: 991px) {
+
+  .banner-aside-title {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+}
+
+@media(max-width: 767px) {
+
+  .banner-aside {
+    max-width: 320px;
+  }
+
+  .banner-aside-title {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+}

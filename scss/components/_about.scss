@@ -1,0 +1,79 @@
+/*********************************************
+*********** about
+**********************************************/
+
+.about {
+  position: relative;
+  padding: 0;
+
+  .custom-select {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  h2 {
+    text-align: left;
+    color: $color-red;
+    font-size: 22px;
+    text-transform: none;
+  }
+
+  h3 {
+    @include medium;
+    font-size: 18px;
+  }
+
+}
+
+.about-brand-description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.about-brand-category {
+
+  h4 {
+    color: $color-red;
+    font-size: 15px;
+    padding: 0 0 0 15px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+}
+
+@media(max-width: 991px) {
+
+}
+
+@media(max-width: 767px) {
+
+}
+
+@media(max-width: 575px) {
+
+}
