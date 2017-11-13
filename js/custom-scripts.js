@@ -130,6 +130,10 @@ $(window).ready(function() {
         $(this).parents('.products-show-amount').removeClass('active');
     });
 
+    $('.view-order-control').click(function() {
+        $(this).toggleClass('active');
+    });
+
     /* modal */
 
     $('.header-sign-in').click(function() {
