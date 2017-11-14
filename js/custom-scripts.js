@@ -134,6 +134,26 @@ $(window).ready(function() {
         $(this).toggleClass('active');
     });
 
+    /* products amount */
+
+    $('.product-amount-minus').click(function() {
+        var value = parseInt($(this).siblings('.product-amount-value').text());
+        if(value > 1) {
+            --value;
+            $(this).siblings('.product-amount-value').text(value)
+            $(this).siblings('input').attr('val', value)
+        }
+    });
+
+    $('.product-amount-plus').click(function() {
+        var value = parseInt($(this).siblings('.product-amount-value').text());
+        ++value;
+        $(this).siblings('.product-amount-value').text(value)
+        $(this).siblings('input').attr('val', value)
+    });
+
+    /* end of products amount */
+
     /* modal */
 
     $('.header-sign-in').click(function() {
