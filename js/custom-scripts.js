@@ -154,6 +154,19 @@ $(window).ready(function() {
 
     /* end of products amount */
 
+    /* countdown */
+    var date = new Date(), dateForCounter;
+
+    dateForCounter = date.getMonth() + 1 + '/' + (date.getDate() + 1) + '/' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+
+    console.log(dateForCounter);
+    $('.cart-contact-timer').downCount({
+        date: dateForCounter,
+        offset: +2
+    });
+
+    /* end of countdown */
+
     /* modal */
 
     $('.header-sign-in').click(function() {

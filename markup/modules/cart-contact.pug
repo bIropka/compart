@@ -7,45 +7,56 @@ div(class='cart-contact')
 
                 form(class='form-contacts')
 
-                    div(class='col-12 col-sm-6')
-                        label
-                            input(type='text' placeholder='Контактное лицо')
+                    div(class='row')
 
-                    div(class='col-12 col-sm-6')
-                        label
-                            input(type='text' placeholder='Телефон для связи')
+                        div(class='col-12 col-sm-6')
+                            label
+                                input(type='text' placeholder='Контактное лицо')
 
-                    div(class='col-12 col-sm-6')
-                        label
-                            input(type='text' placeholder='Организация')
+                        div(class='col-12 col-sm-6')
+                            label
+                                input(type='text' placeholder='Телефон для связи')
 
-                    div(class='col-12 col-sm-6')
-                        label
-                            input(type='text' placeholder='Электронная почта')
+                        div(class='col-12 col-sm-6')
+                            label
+                                input(type='text' placeholder='Организация')
 
-                    div(class='col-12 col-sm-6')
-                        label
-                            input(type='text' placeholder='Город')
+                        div(class='col-12 col-sm-6')
+                            label
+                                input(type='text' placeholder='Электронная почта')
 
-                    div(class='col-12 col-sm-6')
-                        select(class='custom-select')
-                            option(value='default' selected disabled) Способ доставки
-                            option(value='1') Самовывоз
-                            option(value='2') Курьер
+                        div(class='col-12 col-sm-6')
+                            label
+                                input(type='text' placeholder='Город')
 
-                    div(class='col-12 col-sm-6')
-                        button(type='submit')
-                            span(class='button-contacts-icon')
-                                img(src='images/icon-order.png' alt='order')
-                            span(class='button-contacts-text')
+                        div(class='col-12 col-sm-6')
+                            select(class='custom-select')
+                                option(value='default' selected disabled) Способ доставки
+                                option(value='1') Самовывоз
+                                option(value='2') Курьер
 
-                    div(class='col-12 col-sm-6')
-                        button(type='reset')
-                            span(class='button-contacts-icon')
-                                img(src='images/icon-reset.png' alt='reset')
-                            span(class='button-contacts-text')
+                        div(class='col-12 col-md-6')
+                            button(type='submit')
+                                span(class='button-contacts-icon')
+                                    img(src='images/icon-order.png' alt='order')
+                                span(class='button-contacts-text') Запросить
+
+                        div(class='col-12 col-md-6')
+                            button(type='reset')
+                                span(class='button-contacts-icon')
+                                    img(src='images/icon-reset.png' alt='reset')
+                                span(class='button-contacts-text') Очистить контактные данные
 
             div(class='col-12 col-md-5')
                 div(class='cart-contact-guarantee') Если после отправки Запроса с Вами не связались в течение 24 часов мы гарантируем Вам скидку в размере 10% на любой товар!
                 div(class='cart-contact-note') Точная информация о ценах и сроках поставки товара, которого нет в наличии на складе предоставляется в течение 24 часов с момента поступления Запроса.
-                div(class='cart-contact-timer')
+                ul(class='cart-contact-timer')
+                    li
+                        span(class='hours')
+                        span(class='hours_ref')
+                    li
+                        span(class='minutes')
+                        span(class='minutes_ref')
+                    li
+                        span(class='seconds')
+                        span(class='seconds_ref')

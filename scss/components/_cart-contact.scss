@@ -3,7 +3,96 @@
 **********************************************/
 
 .cart-contact {
+  margin: 30px 0 0;
+}
 
+.form-contacts {
+
+  label {
+    margin: 15px 0;
+  }
+
+  .custom-select {
+    width: 100%;
+    border: 2px solid $color-grey;
+    margin: 15px 0;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $color-grey;
+    margin: 15px 0;
+
+    &:hover {
+      background: #c8c8c8;
+    }
+
+  }
+
+  .button-contacts-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    @include medium;
+    margin: 0 0 0 10px;
+  }
+
+}
+
+.cart-contact-guarantee,
+.cart-contact-note {
+  font-size: 15px;
+  line-height: 21px;
+  margin: 16px 0;
+}
+
+.cart-contact-guarantee {
+  @include medium;
+}
+
+.cart-contact-timer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    display: block;
+    text-align: center;
+    width: 50px;
+    line-height: 48px;
+    border: 1px solid $color-grey;
+    background: #f8f8f8;
+    margin: 0 30px 0 0;
+    position: relative;
+
+    &:after {
+      content: ':';
+      font-size: 30px;
+      line-height: 40px;
+      position: absolute;
+      right: -15px;
+      top: 0;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    &:last-of-type:after {
+      display: none;
+    }
+
+  }
+
+}
+
+.hours_ref,
+.minutes_ref,
+.seconds_ref {
+  display: none;
 }
 
 @media(max-width: 1199px) {
@@ -11,6 +100,18 @@
 }
 
 @media(max-width: 991px) {
+
+  .form-contacts {
+
+    label {
+      margin: 5px 0;
+    }
+
+    .custom-select {
+      margin: 5px 0;
+    }
+
+  }
 
 }
 
