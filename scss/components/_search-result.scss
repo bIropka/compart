@@ -1,0 +1,51 @@
+/*********************************************
+*********** search-result
+**********************************************/
+
+.search-result {
+  margin: 30px 0 0;
+
+  h2 {
+    text-align: left;
+    margin: 0 0 15px;
+
+    a {
+      font-size: 22px;
+      text-transform: none;
+    }
+
+  }
+
+  ul {
+
+    li {
+      margin: 5px;
+      list-style-position: inside;
+    }
+
+    a {
+      color: $color-dark;
+      font-size: 17px;
+      line-height: 28px;
+      @include medium;
+    }
+
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+}
+
+@media(max-width: 991px) {
+
+}
+
+@media(max-width: 767px) {
+
+}
+
+@media(max-width: 575px) {
+
+}
