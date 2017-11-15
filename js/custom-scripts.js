@@ -37,7 +37,7 @@ $(window).ready(function() {
         }
     }
 
-    if($(window).scrollTop() > 800) {
+    if($(window).scrollTop() > 400) {
         $('.to-top').addClass('active');
     } else {
         $('.to-top').removeClass('active');
@@ -65,7 +65,7 @@ $(window).ready(function() {
             }
         }
 
-        if($(window).scrollTop() > 800) {
+        if($(window).scrollTop() > 400) {
             $('.to-top').addClass('active');
         } else {
             $('.to-top').removeClass('active');

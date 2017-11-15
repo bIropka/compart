@@ -856,10 +856,12 @@ header {
 
     label {
       width: calc(100% - 34px);
-    }
 
-    input {
-      padding: 0 15px;
+      input {
+        padding: 0 15px;
+        height: 34px;
+      }
+
     }
 
     button[type='submit'] {
@@ -874,15 +876,19 @@ header {
 
   }
 
-  .header-top.shortest .header-cart {
-    height: 34px;
-    padding: 0 49px 0 15px;
-  }
+  .header-top.shortest {
 
-  .header-cart-value {
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
+    .header-cart {
+      height: 34px;
+      padding: 0 49px 0 15px;
+    }
+
+    .header-cart-value {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+
   }
 
   .header-info {

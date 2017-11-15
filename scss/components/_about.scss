@@ -30,6 +30,14 @@
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 1px solid $color-red;
+    }
+
   }
 
 }
