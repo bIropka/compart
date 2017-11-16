@@ -134,6 +134,16 @@ $(window).ready(function() {
         $(this).toggleClass('active');
     });
 
+    $('.item-tab-control').click(function() {
+        var current = $(this).index();
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('.item-tab').eq(current).siblings().slideUp(400);
+        setTimeout(function() {
+            $('.item-tab').eq(current).slideDown();
+        }, 400);
+    });
+
     /* products amount */
 
     $('.product-amount-minus').click(function() {

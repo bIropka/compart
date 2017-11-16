@@ -105,4 +105,28 @@
     margin: 0;
   }
 
+  .catalog-aside-links {
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:after {
+        content: ',';
+        display: inline-block;
+        margin: 0 5px 0 0;
+      }
+
+    }
+
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .catalog-aside-item {
+    padding: 15px;
+  }
+
 }

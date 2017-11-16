@@ -5,14 +5,18 @@
 .item-image {
   margin: 15px 0 0;
   position: relative;
+
+  img {
+    width: 100%;
+  }
+
 }
 
 .item-image-marker {
   display: flex;
-  height: 50px;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 15px 30px;
   background: #fff;
   position: absolute;
   left: 30px;
@@ -39,10 +43,9 @@
 
 .item-order {
   display: flex;
-  height: 50px;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 15px 30px 13px;
   background: $color-grey;
   cursor: pointer;
   transition: .4s;
@@ -80,25 +83,69 @@
 }
 
 .item-info-value {
+  font-size: 14px;
   text-align: right;
-}
-
-.item-data {
-
+  width: 50%;
+  flex-shrink: 0;
 }
 
 @media(max-width: 1199px) {
+
+  .item-image-marker-icon {
+    width: 20px;
+  }
+
+  .item-image-marker-text {
+    font-size: 12px;
+  }
 
 }
 
 @media(max-width: 991px) {
 
+  .item-image-marker-icon {
+    width: auto;
+  }
+
+  .item-image-marker-text {
+    font-size: 14px;
+  }
+
 }
 
-@media(max-width: 767px) {
+@media(max-width: 480px) {
 
-}
+  .item-info-title,
+  .item-info-value {
+    font-size: 12px;
+  }
 
-@media(max-width: 575px) {
+  .item-image-marker {
+    padding: 13px 20px;
+    left: 20px;
+    top: 20px;
+  }
+
+  .item-image-marker-icon {
+    width: 20px;
+  }
+
+  .item-image-marker-text {
+    font-size: 12px;
+  }
+
+  .item-order {
+    padding: 13px 20px 12px;
+
+  }
+
+  .item-order-icon {
+    width: 20px;
+  }
+
+  .item-order-text {
+    font-size: 12px;
+    margin: 0 0 3px 10px;
+  }
 
 }
