@@ -144,6 +144,12 @@ $(window).ready(function() {
         }, 400);
     });
 
+    $('a[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top - 100}, 800);
+        return false;
+    });
+
     /* products amount */
 
     $('.product-amount-minus').click(function() {
