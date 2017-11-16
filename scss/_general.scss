@@ -61,8 +61,12 @@ textarea:focus {
   outline: none;
 }
 
-input {
+input:hover,
+input:active,
+input:focus {
   border: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 input::-webkit-input-placeholder {
@@ -289,10 +293,6 @@ aside {
 }
 
 @media(max-width: 767px) {
-
-  aside {
-    margin: 0 0 30px;
-  }
 
 }
 

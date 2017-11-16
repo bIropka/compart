@@ -604,6 +604,10 @@ header {
 
   }
 
+  .burger {
+    display: block;
+  }
+
 }
 
 .header-cart-wrapper {
@@ -641,8 +645,13 @@ header {
 
   .header-top.shortest {
 
-    .header-local {
+    .burger {
       display: block;
+    }
+
+    .header-local {
+      display: inline-block;
+      vertical-align: middle;
       text-align: left;
     }
 
@@ -722,10 +731,6 @@ header {
       padding: 0 65px 0 15px;
     }
 
-    .burger {
-      display: block;
-    }
-
   }
 
   .header-cart {
@@ -748,9 +753,14 @@ header {
     display: none;
   }
 
-  .header-catalog,
-  .header-sign {
+  .header-catalog {
     display: none;
+  }
+
+  .header-top.shortest .header-sign {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 15px 20px;
   }
 
   .burger {
