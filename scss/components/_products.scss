@@ -96,7 +96,7 @@
   padding: 0 0 0 20px;
 }
 
-.products-pagination {
+.pagination {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -208,7 +208,7 @@
 
 }
 
-.products-pagination-text {
+.pagination-text {
   font-size: 15px;
   color: #52595c;
   margin: 0 5px 0 0;
@@ -245,23 +245,11 @@
   margin: 20px 0 0;
 }
 
-.products-list-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 100%;
-  border-top: 2px solid $color-grey;
-  border-bottom: 2px solid $color-grey;
-}
-
 .products-list-header-item {
-  display: flex;
-  align-items: center;
   padding: 12px 25px 12px 12px;
   font-size: 10px;
   text-transform: uppercase;
   @include medium;
-  border-right: 1px solid $color-grey;
   position: relative;
 
   &:nth-of-type(1) {
@@ -298,7 +286,6 @@
   &:nth-of-type(8) {
     width: 8%;
     justify-content: center;
-    border-right: none;
     padding: 0;
   }
 
@@ -332,33 +319,6 @@
 
 }
 
-.products-list {
-  width: 100%;
-}
-
-.products-item {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  background: #f4fbff;
-
-  &:nth-of-type(2n) {
-    background: #f8f8f8;
-  }
-
-}
-
-.products-item > div {
-  display: flex;
-  align-items: center;
-  padding: 15px 10px;
-  font-size: 12px;
-  line-height: 16px;
-  border-right: 1px solid $color-grey;
-  border-bottom: 2px solid #fff;
-}
-
 .products-item-image {
   width: 10%;
   justify-content: center;
@@ -372,6 +332,11 @@
     background: url(../images/image-picture-empty.png) no-repeat 0 0;
     background-size: cover;
     position: relative;
+    box-shadow:  0 0 0 2px transparent;
+
+    &:hover {
+      box-shadow:  0 0 0 2px $color-red;
+    }
 
     img {
       position: absolute;
@@ -379,10 +344,6 @@
       top: 0;
       width: 100%;
       height: auto;
-    }
-
-    &:hover {
-      box-shadow: 0 0 0 1px $color-red;
     }
 
   }
@@ -547,7 +508,7 @@
     flex-wrap: wrap;
   }
 
-  .products-pagination {
+  .pagination {
     width: 100%;
     margin: 10px 0;
   }
@@ -638,11 +599,11 @@
     justify-content: center;
   }
 
-  .products-pagination {
+  .pagination {
     justify-content: center;
   }
 
-  .products-pagination-text {
+  .pagination-text {
     display: none;
   }
 

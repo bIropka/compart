@@ -284,6 +284,53 @@ aside {
   border-radius: 0;
 }
 
+.table-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  border-top: 2px solid $color-grey;
+  border-bottom: 2px solid $color-grey;
+}
+
+.table-header > div {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid $color-grey;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
+}
+
+.table-body {
+  width: 100%;
+}
+
+.table-item {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #f4fbff;
+
+  &:nth-of-type(2n) {
+    background: #f8f8f8;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    border-right: 1px solid $color-grey;
+    border-bottom: 2px solid #fff;
+  }
+
+}
+
 @media(min-width: 1200px) {
 
   .container {
