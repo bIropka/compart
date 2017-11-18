@@ -519,11 +519,11 @@
       }
 
       &:nth-of-type(2) {
-        width: 15%;
+        width: 24.5%;
       }
 
       &:nth-of-type(3) {
-        width: 20%;
+        width: 30.5%;
       }
 
       &:nth-of-type(4) {
@@ -531,11 +531,11 @@
       }
 
       &:nth-of-type(5) {
-        width: 25%;
+        width: 20%;
       }
 
       &:nth-of-type(6) {
-        width: 15%;
+        display: none;
       }
 
       &:nth-of-type(7) {
@@ -580,6 +580,16 @@
 
   .cart-refresh {
     top: -68px;
+  }
+
+  .cart-order-title {
+    padding-top: 2px;
+    font-size: 14px;
+  }
+
+  .cart-manager-text-mobile,
+  .cart-manager-name {
+    font-size: 13px;
   }
 
 }

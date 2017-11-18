@@ -26,6 +26,7 @@
 
   label {
     margin: 0 20px 0 0;
+    position: relative;
 
     &:nth-of-type(1) {
       width: 200px;
@@ -42,6 +43,10 @@
       flex-grow: 1;
     }
 
+    input {
+      padding: 0 30px 0 20px;
+    }
+
   }
 
   button[type='submit'] {
@@ -55,6 +60,28 @@
 
     &:hover {
       background: $color-red;
+    }
+
+  }
+
+  .field-clear {
+    display: none;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 18px;
+    color: $color-red;
+    cursor: pointer;
+
+    &.active {
+      display: block;
+    }
+
+    &:hover {
+      font-weight: 700;
     }
 
   }
