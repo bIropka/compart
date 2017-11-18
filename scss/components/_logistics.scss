@@ -1,0 +1,48 @@
+/*********************************************
+*********** logistics
+**********************************************/
+
+.logistics {
+
+  img {
+    margin: 25px 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    color: $color-red;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+}
+
+.logistics-item {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+
+  h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+}
+
+.logistics-item-image {
+  width: 124px;
+  flex-shrink: 0;
+  margin: 0 35px 0 0;
+}
+
+@media(max-width: 575px) {
+
+  .logistics-item {
+    flex-wrap: wrap;
+  }
+
+  .logistics-item-image {
+    margin: 0 0 25px;
+  }
+
+}
