@@ -1,0 +1,48 @@
+/*********************************************
+*********** vacancies
+**********************************************/
+
+.vacancies-item {
+  padding: 25px 0;
+  border-bottom: 2px solid #f0f0f0;
+
+  h2 {
+    font-size: 22px;
+    line-height: 1;
+    color: $color-red;
+    margin: 0;
+    text-align: left;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      list-style-position: inside;
+      padding: 0 0 0 15px;
+      margin: 5px 0;
+    }
+
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+}
+
+@media(max-width: 991px) {
+
+}
+
+@media(max-width: 767px) {
+
+}
+
+@media(max-width: 575px) {
+
+}
