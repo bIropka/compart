@@ -355,6 +355,11 @@ aside {
     line-height: 16px;
     border-right: 1px solid $color-grey;
     border-bottom: 2px solid #fff;
+
+    &:last-of-type {
+      border-right: none;
+    }
+
   }
 
 }
@@ -380,5 +385,9 @@ aside {
 }
 
 @media(max-width: 575px) {
+
+  h1 {
+    font-size: 20px;
+  }
 
 }

@@ -1,0 +1,318 @@
+/*********************************************
+*********** e-item
+**********************************************/
+
+.e-item {
+
+  h1 {
+    padding: 0 120px 0 0;
+  }
+
+  .to-previous-page {
+    font-size: 17px;
+    color: #61686a;
+    @include medium;
+    text-decoration: none;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+
+    span {
+      color: $color-red;
+      margin: 0 5px 0 0;
+    }
+
+    &:hover {
+      color: $color-red;
+    }
+
+  }
+
+}
+
+.e-item-header {
+  margin: 15px 0 0;
+
+  > div {
+    padding: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+    @include medium;
+
+    &:nth-of-type(1) {
+      width: 7%;
+      justify-content: center;
+    }
+
+    &:nth-of-type(2) {
+      width: 9%;flex-wrap: wrap;
+
+      span {
+        width: 100%;
+      }
+
+    }
+
+    &:nth-of-type(3) {
+      width: 26%;
+    }
+
+    &:nth-of-type(4) {
+      width: 8%;
+      justify-content: center;
+    }
+
+    &:nth-of-type(5) {
+      width: 14%;
+      justify-content: center;
+    }
+
+    &:nth-of-type(6) {
+      width: 14%;
+    }
+
+    &:nth-of-type(7) {
+      width: 14%;
+    }
+
+    &:nth-of-type(8) {
+      width: 8%;
+      justify-content: center;
+    }
+
+  }
+
+}
+
+.e-item-position {
+  width: 7%;
+  justify-content: center;
+}
+
+.e-item-number {
+  width: 9%;
+}
+
+.e-item-name {
+  width: 26%;
+}
+
+.e-item-amount {
+  width: 8%;
+  justify-content: center;
+}
+
+.e-item-presence {
+  width: 14%;
+  justify-content: center;
+}
+
+.e-item-analogue {
+  width: 14%;
+}
+
+.e-item-comment {
+  width: 14%;
+}
+
+.e-item-order {
+  width: 8%;
+  justify-content: center;
+}
+
+.e-item-scheme {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px 0 0;
+}
+
+.e-item-image {
+  position: relative;
+}
+
+.e-item-image-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .57);
+  padding: 15px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 6px;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 0 0 0 2px transparent;
+
+    &:hover {
+      box-shadow: 0 0 0 2px $color-red;
+    }
+
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+}
+
+@media(max-width: 991px) {
+
+  .e-item-header {
+
+    > div {
+
+      &:nth-of-type(1) {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        width: 15%;
+
+        span {
+          display: none;
+        }
+
+      }
+
+      &:nth-of-type(3) {
+        width: 45%;
+      }
+
+      &:nth-of-type(4) {
+        width: 20%;
+        justify-content: center;
+      }
+
+      &:nth-of-type(5) {
+        display: none;
+      }
+
+      &:nth-of-type(6) {
+        display: none;
+      }
+
+      &:nth-of-type(7) {
+        display: none;
+      }
+
+      &:nth-of-type(8) {
+        width: 20%;
+        justify-content: center;
+      }
+
+    }
+
+  }
+
+  .e-item-item {
+
+    .e-item-position {
+      display: none;
+    }
+
+    .e-item-number {
+      width: 15%;
+    }
+
+    .e-item-name {
+      width: 45%;
+    }
+
+    .e-item-amount {
+      width: 20%;
+      justify-content: center;
+    }
+
+    .e-item-presence {
+      display: none;
+    }
+
+    .e-item-analogue {
+      display: none;
+    }
+
+    .e-item-comment {
+      display: none;
+    }
+
+    .e-item-order {
+      width: 20%;
+    }
+
+  }
+
+}
+
+@media(max-width: 767px) {
+
+}
+
+@media(max-width: 480px) {
+
+  .e-item-header {
+
+    > div {
+      font-size: 8px;
+
+      &:nth-of-type(2) {
+        width: 20%;
+      }
+
+      &:nth-of-type(3) {
+        width: 40%;
+      }
+
+      &:nth-of-type(4) {
+        width: 20%;
+      }
+
+      &:nth-of-type(8) {
+        width: 20%;
+      }
+
+    }
+
+  }
+
+  .e-item-item {
+
+    .e-item-number {
+      width: 20%;
+    }
+
+    .e-item-name {
+      width: 40%;
+    }
+
+    .e-item-amount {
+      width: 20%;
+    }
+
+    .e-item-order {
+      width: 20%;
+    }
+
+  }
+
+  .e-item-image-bar {
+
+    a {
+      width: 35px;
+      height: 35px;
+      margin: 0 5px;
+    }
+
+  }
+
+}
