@@ -1,0 +1,80 @@
+/*********************************************
+*********** e-catalogs
+**********************************************/
+
+.e-catalogs-list {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  margin: 35px 0 0;
+}
+
+.e-catalogs-item {
+  position: relative;
+  width: 50%;
+  flex-shrink: 0;
+  padding: 0 20px 0 195px;
+  margin: 0 0 60px;
+
+  &:nth-of-type(2n) {
+    padding: 0 0 0 195px;
+  }
+
+  h2 {
+    font-size: 0;
+    text-align: left;
+
+    a {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+  }
+
+}
+
+.e-catalogs-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 115px;
+  border: 2px solid $color-grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &:hover {
+    border: 2px solid $color-red;
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+  .e-catalogs-item {
+    padding: 0 20px 0 0;
+
+    &:nth-of-type(2n) {
+      padding: 0;
+    }
+
+  }
+
+  .e-catalogs-image {
+    position: static;
+    margin: 0 0 15px;
+  }
+
+}
+
+@media(max-width: 575px) {
+
+  .e-catalogs-item {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+}
