@@ -64,28 +64,6 @@
 
   }
 
-  .field-clear {
-    display: none;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    font-size: 18px;
-    color: $color-red;
-    cursor: pointer;
-
-    &.active {
-      display: block;
-    }
-
-    &:hover {
-      font-weight: 700;
-    }
-
-  }
-
 }
 
 .products-filter {

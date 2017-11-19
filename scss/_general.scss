@@ -130,6 +130,28 @@ label {
     padding: 0 20px;
   }
 
+  .field-clear {
+    display: none;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: .4s;
+
+    &.active {
+      display: block;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+    }
+
+  }
+
 }
 
 input:not([type=checkbox]):not([type=radio]),

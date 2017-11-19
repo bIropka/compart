@@ -173,11 +173,11 @@ $(window).ready(function() {
         return false;
     });
 
-    $('input').change(function () {
-        if ($(this).val() !== '') {
-            $(this).siblings('.field-clear').addClass('active');
+    $(document).on('input', function (ev) {
+        if ($(ev.target).val() !== '') {
+            $(ev.target).siblings('.field-clear').addClass('active');
         } else {
-            $(this).siblings('.field-clear').removeClass('active');
+            $(ev.target).siblings('.field-clear').removeClass('active');
         }
     });
 
@@ -211,7 +211,6 @@ $(window).ready(function() {
 
     dateForCounter = date.getMonth() + 1 + '/' + (date.getDate() + 1) + '/' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
-    console.log(dateForCounter);
     $('.cart-contact-timer').downCount({
         date: dateForCounter,
         offset: +2
