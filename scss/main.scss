@@ -8,6 +8,7 @@
 //////////////////////////////////////////////
 @import "../libs/slick/slick";
 @import "../libs/bootstrap.min";
+@import "../libs/malihu/jquery.mCustomScrollbar.min";
 
 //////////////////////////////////////////////
 //////// tools
@@ -43,3 +44,4 @@
 @import "components/vacancies";
 @import "components/e-catalogs";
 @import "components/e-item";
+@import "components/catalog-brand";

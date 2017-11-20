@@ -1,0 +1,177 @@
+/*********************************************
+*********** catalog-brand
+**********************************************/
+
+.catalog-brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 30px;
+
+  h1 {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  p {
+    width: calc(100% - 190px);
+    text-align: justify;
+  }
+
+}
+
+.catalog-brand-filter {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: calc(100% - 30px);
+    height: 2px;
+    background: #f3f3f3;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+  }
+
+}
+
+.catalog-brand-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 115px;
+  border: 2px solid $color-grey;
+}
+
+.catalog-brand-fields {
+  display: flex;
+  margin: 10px 0 20px;
+
+  label {
+    flex-grow: 1;
+
+    input:focus {
+      border: 2px solid $color-red;
+    }
+
+  }
+
+  .show-variants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: $color-dark;
+    margin: 0 0 0 15px;
+
+    &:hover {
+      background: $color-red;
+    }
+
+  }
+
+}
+
+.catalog-brand-item-title {
+  margin: 0 0 15px;
+  color: $color-red;
+  @include medium;
+}
+
+.catalog-brand-item .custom-scrollbar {
+  width: 100%;
+  height: 324px;
+  background: #f3f3f3;
+  padding: 20px 15px;
+}
+
+.mCSB_draggerRail {
+  background: #fff!important;
+}
+
+.mCSB_dragger_bar {
+  background: #52595c!important;
+  width: 2px!important;
+}
+
+
+.catalog-brand-chooser {
+  display: flex;
+  width: 100%;
+
+  ul {
+    flex-grow: 1;
+    padding: 0 15px;
+
+    li {
+      display: block;
+      font-size: 12px;
+      line-height: 22px;
+      transition: .4s;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-red;
+      }
+
+    }
+
+  }
+
+}
+
+.catalog-brand-link {
+  display: block;
+  padding: 20px 40px;
+  background: #f3f3f3;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-dark;
+  float: right;
+
+  &:hover {
+    background: $color-dark;
+    color: #fff;
+  }
+
+}
+
+@media(max-width: 1199px) {
+
+  .catalog-brand-item {
+    margin: 25px 0;
+  }
+
+}
+
+@media(max-width: 991px) {
+
+}
+
+@media(max-width: 767px) {
+
+}
+
+@media(max-width: 575px) {
+
+  .catalog-brand-header p {
+    width: 100%;
+    margin: 25px 0 0;
+  }
+
+  .catalog-brand-chooser {
+    display: block;
+  }
+
+}

@@ -120,6 +120,7 @@ input:focus:-ms-input-placeholder {
 label {
   display: block;
   width: 100%;
+  position: relative;
 
   input:not([type='checkbox']),
   input:not([type='radio']) {

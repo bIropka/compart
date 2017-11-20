@@ -118,6 +118,18 @@
 
 }
 
+.window-brand {
+  display: none;
+
+  .window-inner {
+    width: 360px;
+    max-height: 400px;
+    overflow: auto;
+    padding: 50px 30px 30px 50px;
+  }
+
+}
+
 .link-forget-password,
 .link-sign-up {
   font-size: 17px;
@@ -159,6 +171,101 @@
 
 }
 
+.window-list {
+
+  ul {
+    display: none;
+  }
+
+  li {
+    display: block;
+  }
+
+}
+
+.window-list-item {
+  margin: 0 0 5px;
+}
+
+.window-list-item-current {
+  font-size: 14px;
+  color: #52595c;
+  position: relative;
+  padding-left: 18px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-red;
+  }
+
+  &:before {
+    content: '';
+    width: 11px;
+    height: 7px;
+    background: url(../images/icon-angle-down.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    transition: .4s;
+  }
+
+  &.active:before {
+    background: url(../images/icon-angle-down-black.png) no-repeat;
+    transform: rotate(180deg);
+  }
+
+}
+
+.window-sublist {
+  padding: 5px 0 0 20px;
+}
+
+.window-sublist-item {
+
+  a {
+    font-size: 14px;
+    color: $color-red;
+    @include medium;
+    line-height: 22px;
+  }
+
+  ul {
+    padding: 0 0 10px 20px;
+  }
+
+}
+
+.window-sublist-item-current {
+  font-size: 14px;
+  color: #000;
+  @include medium;
+  line-height: 22px;
+  padding: 0 0 0 20px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-red;
+  }
+
+  &:before {
+    content: '';
+    width: 11px;
+    height: 7px;
+    background: url(../images/icon-angle-down.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    transition: .4s;
+  }
+
+  &.active:before {
+    background: url(../images/icon-angle-down-black.png) no-repeat;
+    transform: rotate(180deg);
+  }
+
+}
+
 @media(max-width: 480px) {
 
   .window-inner {
@@ -172,7 +279,7 @@
 
 }
 
-@media(max-width: 480px) {
+@media(max-width: 360px) {
 
   .link-forget-password,
   .link-sign-up {
