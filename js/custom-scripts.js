@@ -95,8 +95,12 @@ $(window).ready(function() {
     if($(window).width() < 768) {
         $('.header-sign').insertAfter('.header-local');
         $('.form-search').insertAfter('.burger');
+        $('.item-cost').insertAfter('.item-image');
+        $('.item-order').insertAfter('.item-cost');
     } else {
         $('.header-sign').insertAfter('.burger');
+        $('.item-cost').prependTo('.item-info-header');
+        $('.item-order').appendTo('.item-info-header');
         if($(window).scrollTop() > 250) {
             $('.form-search').insertAfter('.header-sign');
         }
@@ -123,11 +127,16 @@ $(window).ready(function() {
         if($(window).width() < 768) {
             $('.header-sign').insertAfter('.header-local');
             $('.form-search').insertAfter('.burger');
+            $('.item-cost').insertAfter('.item-image');
+            $('.item-order').insertAfter('.item-cost');
         } else {
             $('.header-sign').insertAfter('.burger');
+            $('.item-cost').prependTo('.item-info-header');
+            $('.item-order').appendTo('.item-info-header');
             if($(window).scrollTop() > 250) {
                 $('.form-search').insertAfter('.header-sign');
             }
+
         }
 
     });
