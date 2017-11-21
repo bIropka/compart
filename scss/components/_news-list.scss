@@ -59,6 +59,10 @@
 
 @media(max-width: 480px) {
 
+  .preview-item-image {
+    display: none;
+  }
+
   .news-item {
     padding: 30px 0;
 

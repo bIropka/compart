@@ -49,6 +49,7 @@
     @include medium;
     margin: 0 0 0 10px;
     text-align: left;
+    flex-grow: 0;
   }
 
 }
@@ -114,6 +115,14 @@
 
 @media(max-width: 1199px) {
 
+  .form-contacts {
+
+    button[type='reset'] .button-contacts-text {
+      font-size: 12px;
+    }
+
+  }
+
 }
 
 @media(max-width: 991px) {
@@ -130,6 +139,10 @@
 
     button {
       margin: 15px 0 0;
+    }
+
+    button[type='reset'] .button-contacts-text {
+      font-size: 14px;
     }
 
   }

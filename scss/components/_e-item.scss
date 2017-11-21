@@ -164,6 +164,34 @@
 
 @media(max-width: 1199px) {
 
+  .e-item-header {
+
+    > div {
+
+      &:nth-of-type(2) {
+        width: 13%;
+      }
+
+      &:nth-of-type(3) {
+        width: 22%;
+      }
+
+    }
+
+  }
+
+  .e-item-item {
+
+    .e-item-number {
+      width: 13%;
+    }
+
+    .e-item-name {
+      width: 22%;
+    }
+
+  }
+
 }
 
 @media(max-width: 991px) {
@@ -298,7 +326,5 @@
     }
 
   }
-
-
 
 }
