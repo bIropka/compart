@@ -42,7 +42,21 @@
   }
 
   .logistics-item-image {
-    margin: 0 0 25px;
+    display: none;
+  }
+
+  .logistics {
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      color: #383838;
+    }
+
   }
 
 }
