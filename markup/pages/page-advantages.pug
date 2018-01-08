@@ -1,0 +1,22 @@
+extends ../layout/layout
+
+block title
+    | Page advantages
+
+block content
+    div(class='container')
+        div(class='row')
+
+            div(class='col-12')
+                include ../modules/breadcrumbs
+
+        div(class='row')
+
+            div(class='col-12 col-md-3 d-flex align-items-stretch order-2 order-md-1')
+                aside
+                    include ../modules/banner-aside
+                    include ../modules/previews-short
+                    include ../modules/previews-full
+
+            div(class='col-12 col-md-9 order-1 order-md-2')
+                include ../modules/advantages
