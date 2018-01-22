@@ -74,6 +74,16 @@
     text-transform: uppercase;
   }
 
+  &-text {
+    display: flex;
+
+    p {
+      @include medium;
+      margin: 20px 0 0;
+    }
+
+  }
+
 }
 
 .window-sign-in {

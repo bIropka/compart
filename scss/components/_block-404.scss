@@ -1,0 +1,71 @@
+/*********************************************
+*********** block-404
+**********************************************/
+
+.block-404 {
+  background: url(../images/background-404.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 82px 0;
+}
+
+.block-404-title {
+  display: inline-block;
+  font-size: 37px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px 12px;
+  background: $color-dark;
+  line-height: 42px;
+}
+
+.block-404-image {
+  display: flex;
+  max-width: 90%;
+  margin: 75px auto 90px;
+}
+
+.block-404-note {
+  font-size: 25px;
+  line-height: 28px;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+}
+
+@media(max-width: 575px) {
+
+  .block-404 {
+    padding: 35px 0;
+  }
+
+  .block-404-title {
+    display: block;
+    font-size: 28px;
+    padding: 10px 30px 12px;
+    line-height: 32px;
+  }
+
+  .block-404-image {
+    margin: 30px auto 35px;
+  }
+
+  .block-404-note {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .block-404-image {
+    display: block;
+    margin: 25px auto;
+  }
+
+}
