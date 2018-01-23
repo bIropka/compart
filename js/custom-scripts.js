@@ -343,4 +343,30 @@ $(window).ready(function() {
 
     /* end of slider products */
 
+    /* products view */
+
+    $('.products-view a').click(function(event) {
+        $('.products-wrap ').css('opacity', 0);
+        if(!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            if($(this).hasClass('products-view-grid')) {
+                $('.products-wrap ').addClass('products-wrap-grid');
+                $('.products-set').toggleClass('table-body products-grid');
+                $('.products-set > div').removeClass('table-item');
+
+            } else if($(this).hasClass('products-view-line')) {
+                $('.products-wrap ').removeClass('products-wrap-grid');
+                $('.products-set').toggleClass('table-body products-grid');
+                $('.products-set > div').addClass('table-item');
+            }
+            setTimeout(function() {
+                $('.products-wrap ').animate({opacity : 1}, 500);
+            }, 500);
+        }
+        event.preventDefault();
+    });
+
+    /* end of products view */
+
 });
