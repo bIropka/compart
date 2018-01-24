@@ -5,9 +5,28 @@
 .item-image {
   margin: 15px 0 0;
   position: relative;
+  min-height: 350px;
+  display: block;
+  background: #f0f0f0 url(../images/image-picture-empty-mobile.png) no-repeat center 45%;
+
+  &:before {
+    content: 'фотография отсутствует';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+    text-align: center;
+    text-transform: uppercase;
+    @include bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-red;
+  }
 
   img {
     width: 100%;
+    position: relative;
   }
 
 }
@@ -21,6 +40,7 @@
   position: absolute;
   left: 30px;
   top: 30px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
 }
 
 .item-image-marker-text {
@@ -90,6 +110,15 @@
 
 @media(max-width: 1199px) {
 
+  .item-image {
+    min-height: 250px;
+
+    &:before {
+      bottom: 25%;
+    }
+
+  }
+
   .item-image-marker-icon {
     width: 20px;
   }
@@ -101,6 +130,15 @@
 }
 
 @media(max-width: 991px) {
+
+  .item-image {
+    min-height: 150px;
+
+    &:before {
+      bottom: 15%;
+    }
+
+  }
 
   .item-image-marker-icon {
     width: auto;
@@ -116,6 +154,11 @@
 
   .item-image {
     width: calc(100% - 165px);
+    background: #f0f0f0 url(../images/image-picture-empty-mobile.png) no-repeat center 30%;
+
+    &:before {
+      padding: 0 10px;
+    }
 
     .item-image-marker {
       width: 150px;
@@ -123,6 +166,7 @@
       padding: 10px 0;
       top: 0;
       left: calc(100% + 15px);
+      box-shadow: none;
     }
 
   }
