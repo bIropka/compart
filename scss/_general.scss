@@ -212,7 +212,9 @@ section {
   height: 50px;
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
   background: $color-red;
   cursor: pointer;
   -webkit-transform: perspective(1px) translateZ(0);

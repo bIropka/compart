@@ -94,7 +94,10 @@ $(window).ready(function() {
 
     if($(window).width() < 768) {
         $('.header-sign').insertAfter('.header-local');
-        $('.form-search').insertAfter('.burger');
+        if(!$('.burger').next().hasClass('form-search')) {
+            console.log('!!!');
+            $('.form-search').insertAfter('.burger');
+        }
         $('.item-cost').insertAfter('.item-image');
         $('.item-order').insertAfter('.item-cost');
     } else {
@@ -126,7 +129,10 @@ $(window).ready(function() {
 
         if($(window).width() < 768) {
             $('.header-sign').insertAfter('.header-local');
-            $('.form-search').insertAfter('.burger');
+            if(!$('.burger').next().hasClass('form-search')) {
+                console.log('!!!');
+                $('.form-search').insertAfter('.burger');
+            }
             $('.item-cost').insertAfter('.item-image');
             $('.item-order').insertAfter('.item-cost');
         } else {
