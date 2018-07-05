@@ -221,7 +221,7 @@
 
 .products-wrap {
   width: 100%;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
 }
 
 .products-wrap-header-item {
@@ -643,6 +643,37 @@
 
     }
 
+  }
+
+}
+
+.products-tags-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 15px;
+}
+
+.products-tags-item {
+  margin: 5px 10px 5px 0;
+  padding: 8px 10px;
+  background: $color-grey;
+  @include medium;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+
+  &:last-of-type {
+    margin: 5px 0;
+  }
+
+  &:hover,
+  &.active {
+    background: #52595c;
+    color: #fff;
   }
 
 }
